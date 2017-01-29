@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "croppie": "^2.4.0",
+    "watermarkjs": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
