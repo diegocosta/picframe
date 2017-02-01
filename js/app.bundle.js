@@ -39,7 +39,7 @@ var Watermark = require('watermarkjs');
                             'id' : response.id,
                             'name' : response.name,
                             'email' : response.email,
-                            'image' : 'http://graph.facebook.com/' + response.id + '/picture?height=600&width=600',
+                            'image' : 'http://graph.facebook.com/' + response.id + '/picture?height=720&width=720',
                             'frame': null,
                             'result': null
                         };
@@ -234,7 +234,7 @@ var Watermark = require('watermarkjs');
     PicFrame.ResultAction = function()
     {
         // Get croppie result and...
-        PicFrame.Croppie.result({ type: 'base64', size: { width: 600, height: 600 } }).then(function(result){
+        PicFrame.Croppie.result({ type: 'base64', size: { width: 720, height: 720 } }).then(function(result){
 
             // Merge image and frame
             PicFrame.Watermark = Watermark([result, PicFrame.User.frame], {
