@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixframe.app</title>
+    <link rel="stylesheet" href="css/croppie.css">
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=101920353618723";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div class="app-container">
+
+        <section data-page="main">
+            <button class="app-button facebook-login" data-login-action>Usar meu Facebook</button>
+            <button class="app-button local-image" app-upload-action>Escolher minha imagem</button>
+        </section>
+
+        <section data-page="frames">
+            <div class="croppie"></div>
+
+
+            <ul class="app-frames">
+                <li class="app-frames-item" data-frames-item="img/frame-powerranger-yellow.png">
+                    <img src="img/frame-powerranger-yellow.png" alt="">
+                </li>
+                <li class="app-frames-item" data-frames-item="img/frame-powerranger-blue.png">
+                    <img src="img/frame-powerranger-blue.png" alt="">
+                </li>
+            </ul>
+
+            <button class="app-button local-image" app-upload-action>Alterar minha imagem</button>
+            <button class="app-button show-result" app-result-action>Ver Resultado</button>
+        </section>
+
+        <section data-page="result">
+            <img src="" alt="" app-result-preview>
+            <a href="" class="app-button" app-result-download>Download</a>
+            <a href="" class="app-button" app-result-share>Compartilhar</a>
+        </section>
+
+    </div>
+
+
+    <script src="js/app.bundle.js"></script>
+</body>
+</html>

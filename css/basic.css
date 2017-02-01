@@ -1,0 +1,109 @@
+.app-page {
+    display: none;
+}
+
+.app-page__active {
+    display: block;
+}
+
+.app-boundary-loading {
+    background-image : url('../img/ajax-loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-viewport-frame {
+    background-size: cover;
+}
+
+.app-container {
+    width: 960px;
+    margin: auto;
+}
+
+.app-frames {
+    margin: 0 auto;
+    width: 300px;
+    padding: 0px;
+}
+
+.app-frames-item {
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.app-frames-item img {
+    width: 49%;
+}
+
+.app-result-button {
+    margin: 20px auto;
+    background: #70aa0c;
+    color: #fff;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 200px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.app-button {
+    background: #eee;
+    border: 0;
+    padding: 20px 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px #ddd;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 2%;
+}
+
+.app-button:focus {
+    outline: none;
+}
+
+.app-button.facebook-login {
+    background: #3b5998;
+    box-shadow: 0px 4px 0px #1e2e4f;
+    color: #fff;
+    width: 45%;
+    float: left;
+}
+
+.app-button.facebook-login:hover {
+    background: #2d4373;
+}
+
+.app-button.local-image {
+    background: #efefef;
+    box-shadow: 0px 4px 0px #ddd;
+    color: #333;
+    width: 45%;
+    float: left;
+}
+
+.app-button.local-image:hover {
+    background: #e2e2e2;
+}
+
+.app-button.show-result {
+    background: #01823b;
+    box-shadow: 0px 4px 0px #015426;
+    color: #fff;
+    width: 45%;
+    float: left;
+    display: none;
+}
+
+.app-button.show-result.app-button-enabled {
+    display: block;
+}
+
+.app-button.show-result:hover {
+    background: #026b31;
+}

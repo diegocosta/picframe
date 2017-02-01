@@ -149,7 +149,7 @@ var Watermark = require('watermarkjs');
         });
 
         // listen click event on button
-        uploadButton.forEach(function(button, index){
+        Array.prototype.slice.call(uploadButton).forEach(function(button, index){
             button.addEventListener('click', function(e){
                 e.preventDefault();
 
@@ -209,7 +209,8 @@ var Watermark = require('watermarkjs');
         if(title) title.innerHTML = PicFrame.User.name;
 
         // enable frame choosing
-        document.querySelectorAll('[data-frames-item]').forEach(function(frame, index){
+        var frameList = document.querySelectorAll('[data-frames-item]');
+        Array.prototype.slice.call(frameList).forEach(function(frame, index){
             frame.addEventListener('click', function(e){
                 e.preventDefault();
 
@@ -222,7 +223,7 @@ var Watermark = require('watermarkjs');
 
                 // enable result button
                 var resultbutton = document.querySelector('[app-result-action]');
-                resultbutton.style.display = 'block';
+                resultbutton.classList.add('app-button-enabled');
                 resultbutton.addEventListener('click', function(e){
                     PicFrame.ResultAction();
                 });
